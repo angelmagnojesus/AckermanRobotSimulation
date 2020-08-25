@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1598389065 source:/Users/Angelo/Documents/AckermanRobotSimulator/main.cpp
+	<iostream>
+	"include/AckermanRobot.h"
+	"include/Scenario.h"
+
+1598316338 source:/Users/Angelo/Documents/AckermanRobotSimulator/src/AkcermanRobot.cpp
+	"AkcermanRobot.h"
+
+1598316447 /Users/Angelo/Documents/AckermanRobotSimulator/include/AkcermanRobot.h
+
+1598388710 source:/Users/Angelo/Documents/AckermanRobotSimulator/src/Scenario.cpp
+	"../include/Scenario.h"
+	<iostream>
+
+1598387498 /Users/Angelo/Documents/AckermanRobotSimulator/include/Scenario.h
+	"AckermanRobot.h"
+
+1598373306 /Users/Angelo/Documents/AckermanRobotSimulator/include/AckermanRobot.h
+
+1598373264 source:/Users/Angelo/Documents/AckermanRobotSimulator/src/AckermanRobot.cpp
+	"../include/AckermanRobot.h"
+	<cmath>
+

@@ -1,0 +1,11 @@
+#include "AkcermanRobot.h"
+
+AkcermanRobot::AkcermanRobot()
+{
+    //ctor
+}
+
+AkcermanRobot::~AkcermanRobot()
+{
+    //dtor
+}

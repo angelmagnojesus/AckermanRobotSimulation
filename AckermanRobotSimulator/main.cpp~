@@ -1,0 +1,30 @@
+#include <iostream>
+#include "include/AckermanRobot.h"
+#include "include/Scenario.h"
+
+using namespace std;
+
+int main()
+{
+    AckermanRobot* bot = new AckermanRobot('*', 1);
+    bot->addLeft(29);
+    /*bot->move(2);
+    bot->move(2);
+    bot->move(2);*/
+    cout << bot->getXPos() << " ";
+    cout << bot->getYPos() << " ";
+
+    Scenario* scene = new Scenario(40, 50, 1);
+    scene->addRobot(bot);
+    bot->move(2);
+    bot->move(2);
+    bot->move(2);
+    scene->updateTab();
+        bot->move(2);
+    bot->move(2);
+    bot->move(2);
+    scene->updateTab();
+    scene->drawTab();
+
+    return 0;
+}

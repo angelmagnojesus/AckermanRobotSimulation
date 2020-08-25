@@ -1,0 +1,18 @@
+#ifndef AKCERMANROBOT_H
+#define AKCERMANROBOT_H
+
+
+class AkcermanRobot
+{
+    public:
+        AkcermanRobot();
+        virtual ~AkcermanRobot();
+        char label;
+        int xpos;
+        int ypos;
+        double thetaAngle;
+    protected:
+    private:
+};
+
+#endif // AKCERMANROBOT_H
