@@ -38,7 +38,7 @@ int AckermanRobot::getYPos(){
 }
 
 void AckermanRobot::move(double vd){
-	xpos += vd*cos((thetaAngle * deltaAngle)*M_PI/180);//converter?
-	ypos += vd*sin((thetaAngle * deltaAngle)*M_PI/180);//converter?
+	xpos += vd*cos((thetaAngle * deltaAngle)*M_PI/180);
+	ypos += vd*sin((thetaAngle * deltaAngle)*M_PI/180);
 	thetaAngle += sin(deltaAngle)*vd/d;
 }
