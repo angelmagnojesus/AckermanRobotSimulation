@@ -8,7 +8,7 @@ Scenario::Scenario(int  heigth, int width, int maxRobots)
 	this->width = width;
 	this->maxRobots = maxRobots;
 	this->tab = (char*)malloc(sizeof(char)*heigth*width);
-	this->arobots = (AckermanRobot**) malloc(sizeof(AckermanRobot)*maxRobots);
+	this->arobots = (AckermanRobot**) malloc(sizeof(AckermanRobot*)*maxRobots);
 	this->robotCont = 0;
 }
 
@@ -67,9 +67,10 @@ void Scenario::drawTab(){
 
 void Scenario::addRobot(AckermanRobot* robot){
 	if(robotCont < maxRobots){
-		arobots++;
-		*arobots = robot;
-		robotCont++;
+        AckermanRobot** iteraux = arobots;
+        iteraux += robotCont;
+        *iteraux = robot;
+        robotCont++;
 	}else{
 		cout << "Robot limit reached \n";
 	}
