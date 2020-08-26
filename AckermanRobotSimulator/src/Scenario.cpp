@@ -67,10 +67,10 @@ void Scenario::drawTab(){
 
 void Scenario::addRobot(AckermanRobot* robot){
 	if(robotCont < maxRobots){
-        AckermanRobot** iteraux = arobots;
-        iteraux += robotCont;
-        *iteraux = robot;
-        robotCont++;
+		AckermanRobot** iteraux = arobots;
+		iteraux += robotCont;
+		*iteraux = robot;
+		robotCont++;
 	}else{
 		cout << "Robot limit reached \n";
 	}
